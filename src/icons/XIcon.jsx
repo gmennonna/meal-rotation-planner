@@ -1,0 +1,9 @@
+import { IconBase } from './Icon'
+
+export function XIcon(props) {
+  return (
+    <IconBase {...props}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </IconBase>
+  )
+}

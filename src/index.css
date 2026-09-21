@@ -1,0 +1,101 @@
+:root {
+  color-scheme: dark;
+
+  --bg: #12151a;
+  --surface: #1b1f26;
+  --surface-alt: #232833;
+  --text: #edeae2;
+  --text-secondary: #8c919c;
+  --accent-plan: #5b8c74;
+  --accent-free: #c99a4b;
+  --accent-jolly: #c4685a;
+  --border: #2b303b;
+
+  --accent-plan-tint: rgba(91, 140, 116, 0.14);
+  --accent-free-tint: rgba(201, 154, 75, 0.14);
+  --accent-jolly-tint: rgba(196, 104, 90, 0.14);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --radius: 11px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    color-scheme: light;
+    --bg: #f7f5f0;
+    --surface: #ffffff;
+    --surface-alt: #efebe2;
+    --text: #1a1c20;
+    --text-secondary: #6b6f78;
+    --accent-plan: #3f6b54;
+    --accent-free: #9c7530;
+    --accent-jolly: #a34a2c;
+    --border: #e3dfd3;
+    --accent-plan-tint: rgba(63, 107, 84, 0.1);
+    --accent-free-tint: rgba(156, 117, 48, 0.1);
+    --accent-jolly-tint: rgba(163, 74, 44, 0.1);
+  }
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f7f5f0;
+  --surface: #ffffff;
+  --surface-alt: #efebe2;
+  --text: #1a1c20;
+  --text-secondary: #6b6f78;
+  --accent-plan: #3f6b54;
+  --accent-free: #9c7530;
+  --accent-jolly: #a34a2c;
+  --border: #e3dfd3;
+  --accent-plan-tint: rgba(63, 107, 84, 0.1);
+  --accent-free-tint: rgba(156, 117, 48, 0.1);
+  --accent-jolly-tint: rgba(163, 74, 44, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+}
+
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+img {
+  max-width: 100%;
+}
