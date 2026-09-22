@@ -1,358 +1,418 @@
 [
   {
-    "id": "meal-001",
+    "id": "colazione-a",
     "meal_type": "colazione",
     "variant_label": "A",
     "ingredients": [
       {
-        "name": "Avena",
-        "quantity": 60,
+        "name": "fiocchi d'avena",
+        "quantity": 80,
         "unit": "g"
       },
       {
-        "name": "Whey protein",
-        "quantity": 30,
-        "unit": "g"
+        "name": "uova intere",
+        "quantity": 3,
+        "unit": "pz"
       },
       {
-        "name": "Banana",
-        "quantity": 120,
+        "name": "albumi",
+        "quantity": 2,
+        "unit": "pz"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "pz"
+      },
+      {
+        "name": "burro di arachidi",
+        "quantity": 20,
         "unit": "g"
       }
     ],
-    "kcal": 454,
-    "protein_g": 35.5,
-    "fat_g": 6.3,
-    "carbs_g": 69.6,
+    "kcal": 802,
+    "protein_g": 46.5,
+    "fat_g": 32.5,
+    "carbs_g": 85.7,
     "active": true
   },
   {
-    "id": "meal-002",
+    "id": "colazione-b",
     "meal_type": "colazione",
     "variant_label": "B",
     "ingredients": [
       {
-        "name": "Uova intere",
+        "name": "Milk High Protein Pancakes Classici",
+        "quantity": 160,
+        "unit": "g"
+      },
+      {
+        "name": "yogurt greco magro",
         "quantity": 150,
         "unit": "g"
       },
       {
-        "name": "Pane integrale",
-        "quantity": 60,
+        "name": "miele",
+        "quantity": 20,
         "unit": "g"
       },
       {
-        "name": "Avocado",
-        "quantity": 50,
-        "unit": "g"
+        "name": "banana",
+        "quantity": 1,
+        "unit": "pz"
       }
     ],
-    "kcal": 461,
-    "protein_g": 28.3,
-    "fat_g": 25.9,
-    "carbs_g": 30.5,
+    "kcal": 654,
+    "protein_g": 48.4,
+    "fat_g": 10.6,
+    "carbs_g": 92.5,
     "active": true
   },
   {
-    "id": "meal-003",
+    "id": "colazione-c",
     "meal_type": "colazione",
     "variant_label": "C",
     "ingredients": [
       {
-        "name": "Yogurt greco 0%",
+        "name": "yogurt greco",
         "quantity": 200,
         "unit": "g"
       },
       {
-        "name": "Avena",
+        "name": "granola",
         "quantity": 40,
         "unit": "g"
       },
       {
-        "name": "Mandorle",
+        "name": "frutta secca",
+        "quantity": 20,
+        "unit": "g"
+      },
+      {
+        "name": "miele",
+        "quantity": 10,
+        "unit": "g"
+      }
+    ],
+    "kcal": 490,
+    "protein_g": 26,
+    "fat_g": 22.8,
+    "carbs_g": 44.4,
+    "active": true
+  },
+  {
+    "id": "spuntino-mattina-a",
+    "meal_type": "spuntino_mattina",
+    "variant_label": "A",
+    "ingredients": [
+      {
+        "name": "whey protein",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "latte intero",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "banana",
+        "quantity": 1,
+        "unit": "pz"
+      },
+      {
+        "name": "burro di arachidi",
         "quantity": 20,
         "unit": "g"
       }
     ],
-    "kcal": 389,
-    "protein_g": 31,
-    "fat_g": 13.6,
-    "carbs_g": 38,
+    "kcal": 529,
+    "protein_g": 39.9,
+    "fat_g": 23,
+    "carbs_g": 47.8,
     "active": true
   },
   {
-    "id": "meal-004",
-    "meal_type": "spuntino_mattina",
-    "variant_label": "A",
-    "ingredients": [
-      {
-        "name": "Whey protein",
-        "quantity": 30,
-        "unit": "g"
-      },
-      {
-        "name": "Gallette di riso",
-        "quantity": 30,
-        "unit": "g"
-      }
-    ],
-    "kcal": 230,
-    "protein_g": 26.5,
-    "fat_g": 2.6,
-    "carbs_g": 26.7,
-    "active": true
-  },
-  {
-    "id": "meal-005",
+    "id": "spuntino-mattina-b",
     "meal_type": "spuntino_mattina",
     "variant_label": "B",
     "ingredients": [
       {
-        "name": "Yogurt greco 0%",
-        "quantity": 150,
+        "name": "whey protein",
+        "quantity": 30,
         "unit": "g"
       },
       {
-        "name": "Banana",
-        "quantity": 100,
+        "name": "latte intero",
+        "quantity": 300,
+        "unit": "ml"
+      },
+      {
+        "name": "fiocchi d'avena",
+        "quantity": 30,
+        "unit": "g"
+      },
+      {
+        "name": "miele",
+        "quantity": 5,
         "unit": "g"
       }
     ],
-    "kcal": 178,
-    "protein_g": 16.1,
-    "fat_g": 0.9,
-    "carbs_g": 28.4,
+    "kcal": 438,
+    "protein_g": 38.7,
+    "fat_g": 14.7,
+    "carbs_g": 40.4,
     "active": true
   },
   {
-    "id": "meal-006",
-    "meal_type": "pranzo",
-    "variant_label": "A",
-    "ingredients": [
-      {
-        "name": "Petto di pollo",
-        "quantity": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Riso basmati",
-        "quantity": 80,
-        "unit": "g"
-      },
-      {
-        "name": "Broccoli",
-        "quantity": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Olio EVO",
-        "quantity": 10,
-        "unit": "g"
-      }
-    ],
-    "kcal": 672,
-    "protein_g": 56.4,
-    "fat_g": 16.7,
-    "carbs_g": 72.9,
-    "active": true
-  },
-  {
-    "id": "meal-007",
-    "meal_type": "pranzo",
-    "variant_label": "B",
-    "ingredients": [
-      {
-        "name": "Tonno al naturale",
-        "quantity": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Riso basmati",
-        "quantity": 80,
-        "unit": "g"
-      },
-      {
-        "name": "Insalata mista",
-        "quantity": 100,
-        "unit": "g"
-      },
-      {
-        "name": "Olio EVO",
-        "quantity": 10,
-        "unit": "g"
-      }
-    ],
-    "kcal": 562,
-    "protein_g": 46.1,
-    "fat_g": 12.4,
-    "carbs_g": 65.3,
-    "active": true
-  },
-  {
-    "id": "meal-008",
-    "meal_type": "pranzo",
+    "id": "spuntino-mattina-c",
+    "meal_type": "spuntino_mattina",
     "variant_label": "C",
     "ingredients": [
       {
-        "name": "Salmone",
-        "quantity": 150,
+        "name": "whey protein",
+        "quantity": 30,
         "unit": "g"
       },
       {
-        "name": "Patate",
+        "name": "latte intero",
         "quantity": 250,
+        "unit": "ml"
+      },
+      {
+        "name": "frutti di bosco",
+        "quantity": 100,
         "unit": "g"
       },
       {
-        "name": "Zucchine",
-        "quantity": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Olio EVO",
-        "quantity": 10,
-        "unit": "g"
-      }
-    ],
-    "kcal": 618,
-    "protein_g": 36.8,
-    "fat_g": 30.2,
-    "carbs_g": 47.2,
-    "active": true
-  },
-  {
-    "id": "meal-009",
-    "meal_type": "spuntino_sera",
-    "variant_label": "A",
-    "ingredients": [
-      {
-        "name": "Fiocchi di latte",
-        "quantity": 200,
-        "unit": "g"
-      },
-      {
-        "name": "Mandorle",
+        "name": "mandorle",
         "quantity": 15,
         "unit": "g"
       }
     ],
-    "kcal": 283,
-    "protein_g": 27.2,
-    "fat_g": 16.1,
-    "carbs_g": 10.1,
+    "kcal": 404,
+    "protein_g": 35.9,
+    "fat_g": 18.6,
+    "carbs_g": 27.7,
     "active": true
   },
   {
-    "id": "meal-010",
-    "meal_type": "spuntino_sera",
-    "variant_label": "B",
-    "ingredients": [
-      {
-        "name": "Albume d'uovo",
-        "quantity": 200,
-        "unit": "g"
-      },
-      {
-        "name": "Gallette di riso",
-        "quantity": 30,
-        "unit": "g"
-      }
-    ],
-    "kcal": 220,
-    "protein_g": 24.5,
-    "fat_g": 1.2,
-    "carbs_g": 25.7,
-    "active": true
-  },
-  {
-    "id": "meal-011",
-    "meal_type": "cena",
+    "id": "pranzo-a",
+    "meal_type": "pranzo",
     "variant_label": "A",
     "ingredients": [
       {
-        "name": "Petto di pollo",
+        "name": "petto di pollo",
         "quantity": 150,
         "unit": "g"
       },
       {
-        "name": "Patate",
-        "quantity": 250,
-        "unit": "g"
-      },
-      {
-        "name": "Insalata mista",
+        "name": "riso basmati (crudo)",
         "quantity": 100,
         "unit": "g"
       },
       {
-        "name": "Olio EVO",
-        "quantity": 10,
+        "name": "verdure miste",
+        "quantity": 150,
         "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
       }
     ],
-    "kcal": 543,
-    "protein_g": 52.9,
-    "fat_g": 15.9,
-    "carbs_g": 45.4,
+    "kcal": 769,
+    "protein_g": 56.3,
+    "fat_g": 20.3,
+    "carbs_g": 85.5,
     "active": true
   },
   {
-    "id": "meal-012",
-    "meal_type": "cena",
+    "id": "pranzo-b",
+    "meal_type": "pranzo",
     "variant_label": "B",
     "ingredients": [
       {
-        "name": "Tonno al naturale",
+        "name": "salmone o tonno",
         "quantity": 150,
         "unit": "g"
       },
       {
-        "name": "Pane integrale",
-        "quantity": 80,
-        "unit": "g"
-      },
-      {
-        "name": "Pomodori",
-        "quantity": 150,
-        "unit": "g"
-      },
-      {
-        "name": "Olio EVO",
-        "quantity": 10,
-        "unit": "g"
-      }
-    ],
-    "kcal": 487,
-    "protein_g": 50.8,
-    "fat_g": 14.5,
-    "carbs_g": 38.7,
-    "active": true
-  },
-  {
-    "id": "meal-013",
-    "meal_type": "cena",
-    "variant_label": "C",
-    "ingredients": [
-      {
-        "name": "Uova intere",
-        "quantity": 180,
-        "unit": "g"
-      },
-      {
-        "name": "Zucchine",
+        "name": "patate",
         "quantity": 200,
         "unit": "g"
       },
       {
-        "name": "Parmigiano",
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 562,
+    "protein_g": 41.2,
+    "fat_g": 24.7,
+    "carbs_g": 41.5,
+    "active": true
+  },
+  {
+    "id": "pranzo-c",
+    "meal_type": "pranzo",
+    "variant_label": "C",
+    "ingredients": [
+      {
+        "name": "manzo magro",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "pasta integrale (cruda)",
+        "quantity": 90,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 728,
+    "protein_g": 46.3,
+    "fat_g": 29.7,
+    "carbs_g": 66.9,
+    "active": true
+  },
+  {
+    "id": "spuntino-sera-a",
+    "meal_type": "spuntino_sera",
+    "variant_label": "A",
+    "ingredients": [
+      {
+        "name": "yogurt greco o fiocchi di latte",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "frutta secca",
         "quantity": 20,
         "unit": "g"
       }
     ],
-    "kcal": 391,
-    "protein_g": 33,
-    "fat_g": 26,
-    "carbs_g": 8.2,
+    "kcal": 295,
+    "protein_g": 25,
+    "fat_g": 17.2,
+    "carbs_g": 10.6,
+    "active": true
+  },
+  {
+    "id": "cena-a",
+    "meal_type": "cena",
+    "variant_label": "A",
+    "ingredients": [
+      {
+        "name": "pesce bianco",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "patate",
+        "quantity": 200,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 485,
+    "protein_g": 40.9,
+    "fat_g": 16.9,
+    "carbs_g": 41.5,
+    "active": true
+  },
+  {
+    "id": "cena-b",
+    "meal_type": "cena",
+    "variant_label": "B",
+    "ingredients": [
+      {
+        "name": "tacchino",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "quinoa o farro (crudo)",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 688,
+    "protein_g": 66.7,
+    "fat_g": 19.4,
+    "carbs_g": 58.7,
+    "active": true
+  },
+  {
+    "id": "cena-c",
+    "meal_type": "cena",
+    "variant_label": "C",
+    "ingredients": [
+      {
+        "name": "uova intere",
+        "quantity": 3,
+        "unit": "pz"
+      },
+      {
+        "name": "albumi",
+        "quantity": 2,
+        "unit": "pz"
+      },
+      {
+        "name": "legumi",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 607,
+    "protein_g": 42.9,
+    "fat_g": 31.2,
+    "carbs_g": 39.4,
     "active": true
   }
 ]

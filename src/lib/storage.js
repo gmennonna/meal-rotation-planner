@@ -38,7 +38,7 @@ function buildDefaultState() {
   return {
     meals: seedMeals,
     weekdayRotation: buildDefaultRotation(seedMeals),
-    weekendTargets: { kcal: 2200, protein_g: 150 },
+    weekendTargets: { kcal: 2875, protein_g: 155 },
     jollyEntries: [],
     dayLog: [],
   }

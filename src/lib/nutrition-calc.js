@@ -11,12 +11,14 @@ export function calcIngredientTotals({ name, quantity }) {
   if (!ref || !Number.isFinite(quantity)) {
     return { kcal: 0, protein_g: 0, fat_g: 0, carbs_g: 0 }
   }
-  const factor = quantity / 100
+  // `per` holds nutrition values for `basisQuantity` units of `ref.unit`
+  // (e.g. basisQuantity 100 for g/ml ingredients, basisQuantity 1 for pz/cucchiaio ones).
+  const factor = quantity / ref.basisQuantity
   return {
-    kcal: ref.per100.kcal * factor,
-    protein_g: ref.per100.protein_g * factor,
-    fat_g: ref.per100.fat_g * factor,
-    carbs_g: ref.per100.carbs_g * factor,
+    kcal: ref.per.kcal * factor,
+    protein_g: ref.per.protein_g * factor,
+    fat_g: ref.per.fat_g * factor,
+    carbs_g: ref.per.carbs_g * factor,
   }
 }
 
