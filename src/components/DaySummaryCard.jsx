@@ -1,4 +1,5 @@
 import { TargetIcon } from '../icons/TargetIcon'
+import { formatIngredientsList } from '../lib/nutrition-calc'
 import { MEAL_TYPES, MEAL_TYPE_LABELS, WEEKDAY_LABELS } from '../lib/storage'
 
 function sumDayTotals(mealIds, mealsById) {
@@ -59,8 +60,11 @@ export function DaySummaryCard({ weekdayKey, isWeekday, dayPlan, jollyEntry, mea
             const meal = dayPlan[mealType] ? mealsById.get(dayPlan[mealType]) : null
             return (
               <li key={mealType}>
-                <span className="text-secondary">{MEAL_TYPE_LABELS[mealType]}</span>
-                <span>{meal ? `${meal.variant_label} · ${meal.kcal} kcal` : '—'}</span>
+                <div className="day-summary-meal-row">
+                  <span className="text-secondary">{MEAL_TYPE_LABELS[mealType]}</span>
+                  <span>{meal ? `${meal.variant_label} · ${meal.kcal} kcal` : '—'}</span>
+                </div>
+                {meal && <p className="day-summary-meal-ingredients">{formatIngredientsList(meal.ingredients)}</p>}
               </li>
             )
           })}

@@ -168,6 +168,13 @@
   width: 100%;
 }
 
+.week-col-ingredients {
+  margin: 3px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
 .week-col-jolly p {
   margin: 0 0 6px;
   font-size: 13px;
@@ -304,8 +311,21 @@
 
 .day-summary-meals li {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 3px;
   font-size: 12px;
+}
+
+.day-summary-meal-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-summary-meal-ingredients {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.4;
 }
 
 /* Jolly history */

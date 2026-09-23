@@ -42,3 +42,14 @@ export function calcMealTotals(ingredients) {
 function round1(value) {
   return Math.round(value * 10) / 10
 }
+
+const NO_SPACE_UNITS = new Set(['g', 'ml'])
+
+export function formatIngredientLine({ name, quantity, unit }) {
+  const qtyUnit = NO_SPACE_UNITS.has(unit) ? `${quantity}${unit}` : `${quantity} ${unit}`
+  return `${qtyUnit} ${name}`
+}
+
+export function formatIngredientsList(ingredients) {
+  return ingredients.map(formatIngredientLine).join(', ')
+}

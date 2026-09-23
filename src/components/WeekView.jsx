@@ -1,5 +1,6 @@
 import { SwapIcon } from '../icons/SwapIcon'
 import { XIcon } from '../icons/XIcon'
+import { formatIngredientsList } from '../lib/nutrition-calc'
 import { MEAL_TYPES, MEAL_TYPE_LABELS, WEEKDAYS, WEEKDAY_LABELS } from '../lib/storage'
 
 const WEEKEND_DAYS = ['sab', 'dom']
@@ -54,22 +55,29 @@ export function WeekView({
               ) : (
                 <>
                   <ul className="week-col-meals">
-                    {MEAL_TYPES.map((mealType) => (
-                      <li key={mealType}>
-                        <span className="text-secondary">{MEAL_TYPE_LABELS[mealType]}</span>
-                        <select
-                          value={weekdayRotation[weekday]?.[mealType] ?? ''}
-                          onChange={(e) => onChangeVariant(weekday, mealType, e.target.value)}
-                        >
-                          {optionsFor(mealType, weekdayRotation[weekday]?.[mealType]).map((meal) => (
-                            <option key={meal.id} value={meal.id}>
-                              {meal.variant_label} · {meal.kcal} kcal
-                              {!meal.active ? ' (disattivata)' : ''}
-                            </option>
-                          ))}
-                        </select>
-                      </li>
-                    ))}
+                    {MEAL_TYPES.map((mealType) => {
+                      const selectedId = weekdayRotation[weekday]?.[mealType]
+                      const selectedMeal = selectedId ? mealsById.get(selectedId) : null
+                      return (
+                        <li key={mealType}>
+                          <span className="text-secondary">{MEAL_TYPE_LABELS[mealType]}</span>
+                          <select
+                            value={selectedId ?? ''}
+                            onChange={(e) => onChangeVariant(weekday, mealType, e.target.value)}
+                          >
+                            {optionsFor(mealType, selectedId).map((meal) => (
+                              <option key={meal.id} value={meal.id}>
+                                {meal.variant_label} · {meal.kcal} kcal
+                                {!meal.active ? ' (disattivata)' : ''}
+                              </option>
+                            ))}
+                          </select>
+                          {selectedMeal && (
+                            <p className="week-col-ingredients">{formatIngredientsList(selectedMeal.ingredients)}</p>
+                          )}
+                        </li>
+                      )
+                    })}
                   </ul>
                   <button className="btn btn-ghost btn-small" onClick={() => onOpenJolly(weekday)}>
                     <SwapIcon size={14} />
