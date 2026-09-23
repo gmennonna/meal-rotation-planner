@@ -11,29 +11,34 @@ App personale di pianificazione pasti Lun-Ven con flessibilità nel weekend, lis
 
 ## 2. Design system
 
-Stile moderno e minimale in linea con l'app RACK, adattato a una palette da nutrizione (invece dei toni energici da workout). Nessuna emoji in nessun punto dell'interfaccia: solo icone SVG (outline, stroke coerente, 20-24px).
+Stile luminoso, arrotondato e "consumer app" in stile food/nutrition tracker (rif. mockup fornito in chat: card color-blocked pastello, numeri grandi con progress bar, tab a pillola). Light-first (con variante dark via `prefers-color-scheme`, non prioritaria). Nessuna emoji in nessun punto dell'interfaccia e nessuna fotografia: solo icone SVG outline colorate su badge circolari pastello.
 
-**Palette** (dark-first, con variante light via `prefers-color-scheme`)
-| Ruolo | Dark | Light |
+> Nota: questa sezione ha sostituito una prima versione dark-first in stile RACK (palette verde salvia/ocra/terracotta su sfondo scuro, card a bordo sottile). La logica dei tre "modi" (piano fisso/libero/jolly) e le relative tonalità sono state mantenute, solo reinterpretate in chiave chiara e pastello.
+
+**Palette** (light-first, variante dark via `prefers-color-scheme`)
+| Ruolo | Light | Dark |
 |---|---|---|
-| Sfondo pagina | `#12151A` | `#F7F5F0` |
-| Superficie card | `#1B1F26` | `#FFFFFF` |
-| Superficie alternata | `#232833` | `#EFEBE2` |
-| Testo primario | `#EDEAE2` | `#1A1C20` |
-| Testo secondario | `#8C919C` | `#6B6F78` |
-| Accento — piano fisso | `#5B8C74` (verde salvia) | `#3F6B54` |
-| Accento — modalità libera | `#C99A4B` (ocra caldo) | `#9C7530` |
-| Accento — jolly | `#C4685A` (terracotta) | `#A34A2C` |
-| Bordo | `#2B303B` | `#E3DFD3` |
+| Sfondo pagina | `#F6F3EC` | `#17140F` |
+| Superficie card | `#FFFFFF` | `#221E17` |
+| Superficie soft (liste, chip) | `#F1ECE0` | `#2B261D` |
+| Testo primario | `#201F1B` | `#F3EFE6` |
+| Testo secondario | `#8B8779` | `#A39C8C` |
+| Accento — piano fisso | `#4F7A2E` (verde) | `#8FC15B` |
+| Accento — modalità libera | `#C97A2B` (ambra) | `#E6A85C` |
+| Accento — jolly | `#D1594A` (corallo) | `#E8877A` |
+| Accento — info/latticini | `#4F6FB0` (blu) | `#7F9BDC` |
+| Bordo | `#ECE6D8` | `#362F24` |
+
+Ogni accento ha una variante "soft" (tint pastello ~14-16% di opacità, usata come sfondo pieno di badge/card/progress track).
 
 **Tipografia**
-- Titoli/numeri hero: font serif o grottesco moderno (es. `Fraunces` o `General Sans`), peso 500-600
-- Corpo/UI: sans-serif neutro (es. `Inter`), peso 400-500
-- Numeri (kcal, grammi, percentuali): font monospace tabulare (es. `JetBrains Mono`) per allineamento pulito nelle tabelle
+- Titoli/numeri hero: `Plus Jakarta Sans`, peso 700-800, arrotondato e bold
+- Corpo/UI: `Inter`, peso 400-600
+- Numeri tabulari (kcal, grammi in tabelle come la lista spesa): `JetBrains Mono`
 
-**Icone**: solo SVG outline (stroke 1.5-2px), mai emoji — coerente in tutta l'app, incluse le notifiche/empty state.
+**Icone**: solo SVG outline colorate, mai emoji, mai fotografia — spesso dentro badge circolari con sfondo pastello (`IconBadge`, colore per contesto: verde=piano, ambra=libero, corallo=jolly, blu=latticini/neutro).
 
-**Layout**: card con bordo sottile (1px), raggio 10-12px, niente ombre pesanti né gradienti. Vista settimanale a 7 colonne (5 evidenziate come "piano fisso", 2 come "libere") su desktop, stack verticale su mobile.
+**Layout**: card con raggio ampio (20-22px), niente bordo (contrasto dato dal colore), ombra molto soffusa opzionale. Bottoni e tab a forma di pillola (`radius: 999px`), tab attiva = pillola piena scura. Le card "modalità" (riepilogo giornaliero, colonna del giorno corrente, picker jolly) usano sfondo pieno pastello coerente col modo (non solo bordo/accento sottile). Numeri chiave (kcal, proteine) mostrati grandi con una progress bar colorata sotto che indica l'avanzamento verso il target. Vista settimanale a 7 colonne (5 "piano fisso", 2 "libere") su desktop, stack verticale su mobile.
 
 ## 3. Modello dati
 

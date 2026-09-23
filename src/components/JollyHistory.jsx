@@ -1,11 +1,12 @@
 import { CalendarIcon } from '../icons/CalendarIcon'
+import { IconBadge } from '../icons/IconBadge'
 import { WEEKDAY_LABELS } from '../lib/storage'
 
 export function JollyHistory({ entries }) {
   return (
     <section className="card jolly-history">
       <div className="jolly-history-header">
-        <CalendarIcon size={18} />
+        <IconBadge icon={<CalendarIcon size={15} />} accent="jolly" size={28} />
         <h2>Storico jolly (ultimi 7 giorni)</h2>
       </div>
       <p className="jolly-history-count num">{entries.length}</p>

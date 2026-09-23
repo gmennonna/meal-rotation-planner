@@ -1,3 +1,5 @@
+import { FlameIcon } from '../icons/FlameIcon'
+import { IconBadge } from '../icons/IconBadge'
 import { TargetIcon } from '../icons/TargetIcon'
 import { formatIngredientsList } from '../lib/nutrition-calc'
 import { MEAL_TYPES, MEAL_TYPE_LABELS, WEEKDAY_LABELS } from '../lib/storage'
@@ -13,6 +15,11 @@ function sumDayTotals(mealIds, mealsById) {
   return totals
 }
 
+function progressPct(value, target) {
+  if (!target) return 0
+  return Math.max(0, Math.min(100, (value / target) * 100))
+}
+
 export function DaySummaryCard({ weekdayKey, isWeekday, dayPlan, jollyEntry, mealsById, weekendTargets }) {
   const isJolly = Boolean(jollyEntry)
   const totals = isJolly
@@ -23,12 +30,12 @@ export function DaySummaryCard({ weekdayKey, isWeekday, dayPlan, jollyEntry, mea
 
   const target = weekendTargets
   const kcalDelta = totals.kcal - target.kcal
-  const accentClass = isJolly ? 'accent-jolly' : isWeekday ? 'accent-plan' : 'accent-free'
+  const mode = isJolly ? 'jolly' : isWeekday ? 'plan' : 'free'
 
   return (
-    <section className={`card day-summary ${accentClass}`}>
+    <section className={`card tint-${mode} day-summary`}>
       <div className="day-summary-header">
-        <TargetIcon size={18} />
+        <IconBadge icon={<TargetIcon size={16} />} accent={mode} size={30} />
         <h2>Oggi &middot; {WEEKDAY_LABELS[weekdayKey]}</h2>
       </div>
 
@@ -38,14 +45,38 @@ export function DaySummaryCard({ weekdayKey, isWeekday, dayPlan, jollyEntry, mea
 
       <div className="day-summary-stats">
         <div className="stat">
-          <span className="stat-label">Kcal</span>
-          <span className="stat-value num">{Math.round(totals.kcal)}</span>
-          <span className="stat-target num">/ {target.kcal}</span>
+          <div className="stat-top">
+            <span className="stat-label">
+              <FlameIcon size={13} />
+              Kcal
+            </span>
+            <span className="stat-target num">target {target.kcal}</span>
+          </div>
+          <div className="stat-value-row">
+            <span className="stat-value num">{Math.round(totals.kcal)}</span>
+          </div>
+          <div className="progress-track">
+            <div
+              className={`progress-fill progress-fill-${mode}`}
+              style={{ width: `${progressPct(totals.kcal, target.kcal)}%` }}
+            />
+          </div>
         </div>
+
         <div className="stat">
-          <span className="stat-label">Proteine</span>
-          <span className="stat-value num">{Math.round(totals.protein_g)}g</span>
-          <span className="stat-target num">/ {target.protein_g}g</span>
+          <div className="stat-top">
+            <span className="stat-label">Proteine</span>
+            <span className="stat-target num">target {target.protein_g}g</span>
+          </div>
+          <div className="stat-value-row">
+            <span className="stat-value num">{Math.round(totals.protein_g)}g</span>
+          </div>
+          <div className="progress-track">
+            <div
+              className={`progress-fill progress-fill-${mode}`}
+              style={{ width: `${progressPct(totals.protein_g, target.protein_g)}%` }}
+            />
+          </div>
         </div>
       </div>
 

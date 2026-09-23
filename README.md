@@ -28,10 +28,12 @@ src/
     nutrition-calc.js      # somma kcal/proteine/grassi/carboidrati da ingredienti+quantità (rispetto a ingredients-ref.json)
     shopping-aggregate.js  # genera lista spesa da weekday_rotation
     storage.js              # stato persistito in localStorage + costanti (weekday, meal_type, target giornaliero...)
-  icons/                   # SVG outline, un file per icona
+  icons/                   # SVG outline, un file per icona (+ IconBadge.jsx: badge circolare colorato che le contiene)
 ```
 
 ## Note
+
+- Design light-first, card color-blocked pastello, numeri grandi con progress bar, tab/bottoni a pillola (vedi §2 di `meal-planner-spec.md` per palette e razionale completi).
 
 - I 13 pasti in `meals.json` sono le varianti reali (colazione/spuntino mattina/pranzo/spuntino sera/cena); i macro sono ricalcolati dagli ingredienti tramite `nutrition-calc.js`, non stimati a mano.
 - Il target giornaliero di riferimento (`weekendTargets` in `storage.js`, usato anche per il confronto nei giorni feriali) è 2875 kcal / 155g proteine — punto medio del range 2850-2900 kcal indicato.

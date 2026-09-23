@@ -34,7 +34,7 @@ export function WeekView({
           return (
             <div
               key={weekday}
-              className={`week-col accent-plan ${jollyEntry ? 'is-jolly' : ''} ${weekday === todayWeekday ? 'is-today' : ''}`}
+              className={`week-col ${jollyEntry ? 'is-jolly' : ''} ${weekday === todayWeekday ? 'is-today' : ''}`}
             >
               <div className="week-col-header">
                 <span className="week-col-tag">Piano fisso</span>

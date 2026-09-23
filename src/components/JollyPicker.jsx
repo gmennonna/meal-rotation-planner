@@ -26,7 +26,7 @@ export function JollyPicker({ weekdayLabel, onConfirm, onCancel }) {
 
   return (
     <div className="modal-backdrop" onClick={onCancel}>
-      <div className="modal card accent-jolly" onClick={(e) => e.stopPropagation()}>
+      <div className="modal card tint-jolly" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h3>Jolly &middot; {weekdayLabel}</h3>
           <button className="icon-button" onClick={onCancel} aria-label="Chiudi">

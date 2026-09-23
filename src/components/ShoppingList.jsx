@@ -1,4 +1,18 @@
+import { IconBadge } from '../icons/IconBadge'
 import { ListIcon } from '../icons/ListIcon'
+import { MeatIcon } from '../icons/MeatIcon'
+import { MilkIcon } from '../icons/MilkIcon'
+import { OilDropIcon } from '../icons/OilDropIcon'
+import { WheatIcon } from '../icons/WheatIcon'
+import { LeafIcon } from '../icons/LeafIcon'
+
+const CATEGORY_META = {
+  Proteine: { icon: <MeatIcon size={15} />, accent: 'jolly' },
+  Carboidrati: { icon: <WheatIcon size={15} />, accent: 'free' },
+  Latticini: { icon: <MilkIcon size={15} />, accent: 'info' },
+  'Grassi e dispensa': { icon: <OilDropIcon size={15} />, accent: 'free' },
+  'Verdure e frutta': { icon: <LeafIcon size={15} />, accent: 'plan' },
+}
 
 function formatQuantity(quantity, unit) {
   const rounded = Math.round(quantity * 10) / 10
@@ -28,19 +42,25 @@ export function ShoppingList({ list, onGenerate }) {
 
       {list !== null && list.length > 0 && (
         <div className="shopping-list-groups">
-          {list.map((group) => (
-            <div key={group.category} className="shopping-list-group">
-              <h3>{group.category}</h3>
-              <ul>
-                {group.items.map((item) => (
-                  <li key={`${item.name}-${item.unit}`}>
-                    <span>{item.name}</span>
-                    <span className="num">{formatQuantity(item.quantity, item.unit)}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {list.map((group) => {
+            const meta = CATEGORY_META[group.category] ?? { icon: <ListIcon size={15} />, accent: 'plan' }
+            return (
+              <div key={group.category} className="shopping-list-group">
+                <div className="shopping-list-group-header">
+                  <IconBadge icon={meta.icon} accent={meta.accent} size={28} />
+                  <h3>{group.category}</h3>
+                </div>
+                <ul>
+                  {group.items.map((item) => (
+                    <li key={`${item.name}-${item.unit}`}>
+                      <span>{item.name}</span>
+                      <span className="num">{formatQuantity(item.quantity, item.unit)}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </div>
       )}
     </section>
