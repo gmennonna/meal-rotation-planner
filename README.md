@@ -22,6 +22,7 @@ src/
   data/
     meals.json            # varianti pasto reali, macro ricalcolati dagli ingredienti
     ingredients-ref.json  # valori nutrizionali di riferimento (per 100g/100ml/pz/cucchiaio) degli ingredienti ricorrenti
+    weekday-rotation.json # assegnazione reale variante/giorno (Lun-Ven x meal_type), usata come default in storage.js
   components/              # WeekView, MealVariantEditor, JollyPicker, ShoppingList, DaySummaryCard, JollyHistory
   lib/
     nutrition-calc.js      # somma kcal/proteine/grassi/carboidrati da ingredienti+quantità (rispetto a ingredients-ref.json)

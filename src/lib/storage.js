@@ -1,6 +1,9 @@
 import seedMeals from '../data/meals.json'
+import weekdayRotationSeed from '../data/weekday-rotation.json'
 
-const STORAGE_KEY = 'meal-planner-state-v1'
+// Bumped from v1: v1 saves could carry a stale default weekdayRotation from
+// before the real weekday-rotation.json seed existed.
+const STORAGE_KEY = 'meal-planner-state-v2'
 
 export const WEEKDAYS = ['lun', 'mar', 'mer', 'gio', 'ven']
 export const WEEKDAY_LABELS = {
@@ -27,9 +30,15 @@ function buildDefaultRotation(meals) {
   for (const weekday of WEEKDAYS) {
     rotation[weekday] = {}
     for (const mealType of MEAL_TYPES) {
+      // Fallback for any weekday/meal_type not covered by weekday-rotation.json
+      // (e.g. a new meal_type added without updating the seed rotation).
       const firstActive = meals.find((meal) => meal.meal_type === mealType && meal.active)
       rotation[weekday][mealType] = firstActive ? firstActive.id : null
     }
+  }
+  for (const entry of weekdayRotationSeed) {
+    if (!rotation[entry.weekday]) continue
+    rotation[entry.weekday][entry.meal_type] = entry.meal_id
   }
   return rotation
 }
