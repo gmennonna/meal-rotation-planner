@@ -15,9 +15,9 @@
         "unit": "pz"
       },
       {
-        "name": "albumi",
-        "quantity": 2,
-        "unit": "pz"
+        "name": "albume",
+        "quantity": 70,
+        "unit": "ml"
       },
       {
         "name": "banana",
@@ -30,10 +30,10 @@
         "unit": "g"
       }
     ],
-    "kcal": 802,
-    "protein_g": 46.5,
-    "fat_g": 32.5,
-    "carbs_g": 85.7,
+    "kcal": 804,
+    "protein_g": 46.9,
+    "fat_g": 32.6,
+    "carbs_g": 85.8,
     "active": true
   },
   {
@@ -389,9 +389,9 @@
         "unit": "pz"
       },
       {
-        "name": "albumi",
-        "quantity": 2,
-        "unit": "pz"
+        "name": "albume",
+        "quantity": 70,
+        "unit": "ml"
       },
       {
         "name": "legumi",
@@ -409,10 +409,10 @@
         "unit": "cucchiaio"
       }
     ],
-    "kcal": 607,
-    "protein_g": 42.9,
+    "kcal": 609,
+    "protein_g": 43.3,
     "fat_g": 31.2,
-    "carbs_g": 39.4,
+    "carbs_g": 39.5,
     "active": true
   }
 ]
