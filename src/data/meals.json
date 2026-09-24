@@ -293,6 +293,80 @@
     "active": true
   },
   {
+    "id": "pranzo-d",
+    "meal_type": "pranzo",
+    "variant_label": "D",
+    "ingredients": [
+      {
+        "name": "Delicius Filetti di Sgombro al naturale (sgocciolato)",
+        "quantity": 90,
+        "unit": "g"
+      },
+      {
+        "name": "tonno al naturale (sgocciolato)",
+        "quantity": 70,
+        "unit": "g"
+      },
+      {
+        "name": "riso (a crudo)",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 782,
+    "protein_g": 45.9,
+    "fat_g": 26.1,
+    "carbs_g": 86.5,
+    "active": true
+  },
+  {
+    "id": "pranzo-f",
+    "meal_type": "pranzo",
+    "variant_label": "F",
+    "ingredients": [
+      {
+        "name": "acciughe sott'olio",
+        "quantity": 22,
+        "unit": "g"
+      },
+      {
+        "name": "orata (a crudo)",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "riso basmati (a crudo)",
+        "quantity": 100,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 774,
+    "protein_g": 51.3,
+    "fat_g": 23.8,
+    "carbs_g": 85.5,
+    "active": true
+  },
+  {
     "id": "spuntino-pomeriggio-a",
     "meal_type": "spuntino_pomeriggio",
     "variant_label": "A",
@@ -413,6 +487,65 @@
     "protein_g": 43.3,
     "fat_g": 31.2,
     "carbs_g": 39.5,
+    "active": true
+  },
+  {
+    "id": "cena-d",
+    "meal_type": "cena",
+    "variant_label": "D",
+    "ingredients": [
+      {
+        "name": "zuppa toscana (legumi, verdure, cereali)",
+        "quantity": 500,
+        "unit": "g"
+      },
+      {
+        "name": "petto di pollo",
+        "quantity": 120,
+        "unit": "g"
+      }
+    ],
+    "kcal": 598,
+    "protein_g": 59.7,
+    "fat_g": 16.8,
+    "carbs_g": 55,
+    "active": true
+  },
+  {
+    "id": "cena-f",
+    "meal_type": "cena",
+    "variant_label": "F",
+    "ingredients": [
+      {
+        "name": "acciughe sott'olio",
+        "quantity": 22,
+        "unit": "g"
+      },
+      {
+        "name": "orata (a crudo)",
+        "quantity": 180,
+        "unit": "g"
+      },
+      {
+        "name": "riso basmati (a crudo)",
+        "quantity": 80,
+        "unit": "g"
+      },
+      {
+        "name": "verdure miste",
+        "quantity": 150,
+        "unit": "g"
+      },
+      {
+        "name": "olio evo",
+        "quantity": 1,
+        "unit": "cucchiaio"
+      }
+    ],
+    "kcal": 703,
+    "protein_g": 49.9,
+    "fat_g": 23.6,
+    "carbs_g": 69.9,
     "active": true
   }
 ]

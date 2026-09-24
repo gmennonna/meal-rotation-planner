@@ -26,5 +26,12 @@
   { "name": "pesce bianco", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 92, "protein_g": 19, "fat_g": 1.5, "carbs_g": 0 } },
   { "name": "tacchino", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 135, "protein_g": 30, "fat_g": 1, "carbs_g": 0 } },
   { "name": "quinoa o farro (crudo)", "category": "carboidrati", "unit": "g", "basisQuantity": 100, "per": { "kcal": 350, "protein_g": 12.5, "fat_g": 4.5, "carbs_g": 64 } },
-  { "name": "legumi", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 116, "protein_g": 9, "fat_g": 0.4, "carbs_g": 20 } }
+  { "name": "legumi", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 116, "protein_g": 9, "fat_g": 0.4, "carbs_g": 20 } },
+  { "name": "Delicius Filetti di Sgombro al naturale (sgocciolato)", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 195, "protein_g": 20, "fat_g": 12, "carbs_g": 0 } },
+  { "name": "tonno al naturale (sgocciolato)", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 116, "protein_g": 26, "fat_g": 1, "carbs_g": 0 } },
+  { "name": "riso (a crudo)", "category": "carboidrati", "unit": "g", "basisQuantity": 100, "per": { "kcal": 360, "protein_g": 7, "fat_g": 0.6, "carbs_g": 79 } },
+  { "name": "zuppa toscana (legumi, verdure, cereali)", "category": "verdure", "unit": "g", "basisQuantity": 100, "per": { "kcal": 80, "protein_g": 4.5, "fat_g": 2.5, "carbs_g": 11 } },
+  { "name": "acciughe sott'olio", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 210, "protein_g": 25, "fat_g": 12, "carbs_g": 0 } },
+  { "name": "orata (a crudo)", "category": "proteine", "unit": "g", "basisQuantity": 100, "per": { "kcal": 115, "protein_g": 20, "fat_g": 3.5, "carbs_g": 0 } },
+  { "name": "riso basmati (a crudo)", "category": "carboidrati", "unit": "g", "basisQuantity": 100, "per": { "kcal": 356, "protein_g": 7.1, "fat_g": 0.9, "carbs_g": 78 } }
 ]
