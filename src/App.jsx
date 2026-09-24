@@ -177,6 +177,17 @@ export default function App() {
         </nav>
       </header>
 
+      <div className="app-today">
+        <DaySummaryCard
+          weekdayKey={todayWeekday}
+          isWeekday={isWeekday}
+          dayPlan={state.weekdayRotation[todayWeekday] ?? {}}
+          jollyEntry={todayJolly}
+          mealsById={mealsById}
+          weekendTargets={state.weekendTargets}
+        />
+      </div>
+
       <div className="app-layout">
         <main className="app-main">
           {activeTab === 'week' && (
@@ -203,14 +214,6 @@ export default function App() {
         </main>
 
         <aside className="app-sidebar">
-          <DaySummaryCard
-            weekdayKey={todayWeekday}
-            isWeekday={isWeekday}
-            dayPlan={state.weekdayRotation[todayWeekday] ?? {}}
-            jollyEntry={todayJolly}
-            mealsById={mealsById}
-            weekendTargets={state.weekendTargets}
-          />
           <JollyHistory entries={last7Jolly} />
         </aside>
       </div>

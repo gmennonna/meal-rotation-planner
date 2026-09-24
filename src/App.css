@@ -50,6 +50,10 @@
   color: var(--bg);
 }
 
+.app-today {
+  margin-bottom: 16px;
+}
+
 .app-layout {
   display: grid;
   grid-template-columns: 1fr 300px;
