@@ -2,30 +2,30 @@
   { "weekday": "lun", "meal_type": "colazione", "meal_id": "colazione-a" },
   { "weekday": "lun", "meal_type": "spuntino_mattina", "meal_id": "spuntino-mattina-a" },
   { "weekday": "lun", "meal_type": "pranzo", "meal_id": "pranzo-a" },
-  { "weekday": "lun", "meal_type": "spuntino_sera", "meal_id": "spuntino-sera-a" },
+  { "weekday": "lun", "meal_type": "spuntino_pomeriggio", "meal_id": "spuntino-pomeriggio-a" },
   { "weekday": "lun", "meal_type": "cena", "meal_id": "cena-a" },
 
   { "weekday": "mar", "meal_type": "colazione", "meal_id": "colazione-b" },
   { "weekday": "mar", "meal_type": "spuntino_mattina", "meal_id": "spuntino-mattina-b" },
   { "weekday": "mar", "meal_type": "pranzo", "meal_id": "pranzo-b" },
-  { "weekday": "mar", "meal_type": "spuntino_sera", "meal_id": "spuntino-sera-a" },
+  { "weekday": "mar", "meal_type": "spuntino_pomeriggio", "meal_id": "spuntino-pomeriggio-a" },
   { "weekday": "mar", "meal_type": "cena", "meal_id": "cena-b" },
 
   { "weekday": "mer", "meal_type": "colazione", "meal_id": "colazione-c" },
   { "weekday": "mer", "meal_type": "spuntino_mattina", "meal_id": "spuntino-mattina-c" },
   { "weekday": "mer", "meal_type": "pranzo", "meal_id": "pranzo-c" },
-  { "weekday": "mer", "meal_type": "spuntino_sera", "meal_id": "spuntino-sera-a" },
+  { "weekday": "mer", "meal_type": "spuntino_pomeriggio", "meal_id": "spuntino-pomeriggio-a" },
   { "weekday": "mer", "meal_type": "cena", "meal_id": "cena-c" },
 
   { "weekday": "gio", "meal_type": "colazione", "meal_id": "colazione-a" },
   { "weekday": "gio", "meal_type": "spuntino_mattina", "meal_id": "spuntino-mattina-a" },
   { "weekday": "gio", "meal_type": "pranzo", "meal_id": "pranzo-b" },
-  { "weekday": "gio", "meal_type": "spuntino_sera", "meal_id": "spuntino-sera-a" },
+  { "weekday": "gio", "meal_type": "spuntino_pomeriggio", "meal_id": "spuntino-pomeriggio-a" },
   { "weekday": "gio", "meal_type": "cena", "meal_id": "cena-c" },
 
   { "weekday": "ven", "meal_type": "colazione", "meal_id": "colazione-b" },
   { "weekday": "ven", "meal_type": "spuntino_mattina", "meal_id": "spuntino-mattina-b" },
   { "weekday": "ven", "meal_type": "pranzo", "meal_id": "pranzo-c" },
-  { "weekday": "ven", "meal_type": "spuntino_sera", "meal_id": "spuntino-sera-a" },
+  { "weekday": "ven", "meal_type": "spuntino_pomeriggio", "meal_id": "spuntino-pomeriggio-a" },
   { "weekday": "ven", "meal_type": "cena", "meal_id": "cena-a" }
 ]

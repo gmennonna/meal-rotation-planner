@@ -293,8 +293,8 @@
     "active": true
   },
   {
-    "id": "spuntino-sera-a",
-    "meal_type": "spuntino_sera",
+    "id": "spuntino-pomeriggio-a",
+    "meal_type": "spuntino_pomeriggio",
     "variant_label": "A",
     "ingredients": [
       {

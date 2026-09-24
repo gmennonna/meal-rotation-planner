@@ -1,9 +1,9 @@
 import seedMeals from '../data/meals.json'
 import weekdayRotationSeed from '../data/weekday-rotation.json'
 
-// Bumped from v1: v1 saves could carry a stale default weekdayRotation from
-// before the real weekday-rotation.json seed existed.
-const STORAGE_KEY = 'meal-planner-state-v2'
+// v1 -> v2: stale default weekdayRotation from before weekday-rotation.json existed.
+// v2 -> v3: meal_type/id "spuntino_sera" renamed to "spuntino_pomeriggio".
+const STORAGE_KEY = 'meal-planner-state-v3'
 
 export const WEEKDAYS = ['lun', 'mar', 'mer', 'gio', 'ven']
 export const WEEKDAY_LABELS = {
@@ -15,12 +15,12 @@ export const WEEKDAY_LABELS = {
   sab: 'Sabato',
   dom: 'Domenica',
 }
-export const MEAL_TYPES = ['colazione', 'spuntino_mattina', 'pranzo', 'spuntino_sera', 'cena']
+export const MEAL_TYPES = ['colazione', 'spuntino_mattina', 'pranzo', 'spuntino_pomeriggio', 'cena']
 export const MEAL_TYPE_LABELS = {
   colazione: 'Colazione',
   spuntino_mattina: 'Spuntino mattina',
   pranzo: 'Pranzo',
-  spuntino_sera: 'Spuntino sera',
+  spuntino_pomeriggio: 'Spuntino pomeriggio',
   cena: 'Cena',
 }
 export const JOLLY_LABELS = ['pizza', 'sushi', 'ristorante', 'altro']

@@ -35,6 +35,6 @@ src/
 
 - Design light-first, card color-blocked pastello, numeri grandi con progress bar, tab/bottoni a pillola (vedi §2 di `meal-planner-spec.md` per palette e razionale completi).
 
-- I 13 pasti in `meals.json` sono le varianti reali (colazione/spuntino mattina/pranzo/spuntino sera/cena); i macro sono ricalcolati dagli ingredienti tramite `nutrition-calc.js`, non stimati a mano.
+- I 13 pasti in `meals.json` sono le varianti reali (colazione/spuntino mattina/pranzo/spuntino pomeriggio/cena); i macro sono ricalcolati dagli ingredienti tramite `nutrition-calc.js`, non stimati a mano.
 - Il target giornaliero di riferimento (`weekendTargets` in `storage.js`, usato anche per il confronto nei giorni feriali) è 2875 kcal / 155g proteine — punto medio del range 2850-2900 kcal indicato.
 - Il deploy su GitHub Pages è configurato in `vite.config.js` (`base: '/meal-rotation-planner/'`) e automatizzato via GitHub Actions (`.github/workflows/deploy.yml`) su ogni push a `main`.

@@ -44,7 +44,7 @@ Ogni accento ha una variante "soft" (tint pastello ~14-16% di opacità, usata co
 
 ```
 meals
-  id, meal_type (colazione|pranzo|cena|spuntino_mattina|spuntino_sera)
+  id, meal_type (colazione|pranzo|cena|spuntino_mattina|spuntino_pomeriggio)
   variant_label (A|B|C|D...)
   ingredients: [{ name, quantity, unit }]
   kcal, protein_g, fat_g, carbs_g
